@@ -1,0 +1,29 @@
+{
+  "name": "xtendable/unique-total",
+  "description": "Additional custom total with unique amount for manual payment",
+  "require": {
+    "php": ">=7.2.0"
+  },
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "authors": [
+      {
+          "name": "Didi Kusnadi",
+          "email": "jalapro08@gmail.com",
+          "homepage": "http://didikusnadi.com",
+          "role": "Developer"
+      }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Xtendable\\UniqueTotal\\": ""
+    }
+  }
+}

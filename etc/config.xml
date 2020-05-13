@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+ * Xtendable_UniqueTotal
+ *
+ * @see README.md
+ *
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <uniqueamount>
+            <setting>
+                <enabled>0</enabled>
+                <total_title>Unique Amount</total_title>
+                <payment_methods>banktransfer</payment_methods>
+                <default_digit>3</default_digit>
+                <default_type>0</default_type>
+            </setting>
+        </uniqueamount>
+    </default>
+</config>

@@ -23,4 +23,4 @@ Magento 2.2
 
 ##### Configure unique amount from Backend
 
-![alt text](backend-configuration.png)
+![alt text](config.png)

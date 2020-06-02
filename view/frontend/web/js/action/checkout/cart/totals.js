@@ -24,6 +24,7 @@ define(
 
         return function (isLoading, payment) {
             var serviceUrl = urlBuilder.build('paymentfee/checkout/totals');
+            $("button.checkout").attr("disabled", true);
             return storage.post(
                 serviceUrl,
                 JSON.stringify({payment: payment})
@@ -32,13 +33,14 @@ define(
                     if (response) {
                         var deferred = $.Deferred();
                         isLoading(false);
+                        $("button.checkout").attr("disabled", false);
                         getTotalsAction([], deferred);
                     }
                 }
             ).fail(
                 function (response) {
                     isLoading(false);
-                    //var error = JSON.parse(response.responseText);
+                    $("button.checkout").attr("disabled", false);
                 }
             );
         }
